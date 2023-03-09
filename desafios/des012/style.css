@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;800;900');
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+}
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Inter', sans-serif;
+    --fonte03: 'Playfair Display', serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--fonte01);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top: 50px;
+    
+    font-family: var(--fonte02);
+    font-size: 5vw;
+
+
+}
+
+header > p{
+    padding-bottom: 50px;
+
+}
+
+ header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+ header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte02);
+    font-size: 2.5vw;
+    font-weight: bolder;
+}
+section.normal{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+section.img01, section.img02{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.26);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+section.img01> p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-shadow: 1px 1px 0px, rgba(0, 0, 0, 0.301);
+    
+}
+section.img02> p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-shadow: 1px 1px 0px, rgba(0, 0, 0, 0.301);
+    
+}
+
+section.img01{
+    background-image: url(../des012/imagens/background001.jpg);
+    background-position: right center;
+    
+}
+
+section.img02{
+    background-image: url(../des012/imagens/background002.jpg);
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
