@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -27,6 +28,18 @@
         thead,tfoot{
             background-color: grey;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+            border: 1px solid black;
+        }
+        tbody > tr:nth-child(2n){
+                background-color: lightgray;
+        }
+        tbody > tr:nth-child(2n-1){
+                background-color: white;
         }
         td.num{
             text-align: end;
@@ -99,6 +112,75 @@
                 <td>Santa Catarina</td>
                 <td class="num">6 248 436</td>
             </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 574 789</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 514 952</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 766 528</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 483 985</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3 035 122</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 168 027</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 118 360</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3 120 494</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2 923 369</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2 449 024</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 068 017</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 562 409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 383 445</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">733 559</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">669 526</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450 479</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <th scope="row">Total de Habitantes</th>
